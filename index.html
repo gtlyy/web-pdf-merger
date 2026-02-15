@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF合并工具 - Web版</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PDF合并工具</h1>
+            <p>选取若干PDF文件的全部或一部分，合成一个PDF文件</p>
+        </header>
+
+        <main>
+            <div id="fileInputsContainer">
+                <!-- 文件输入区域将通过JavaScript动态生成 -->
+            </div>
+
+            <button id="addFileBtn" class="btn">添加更多文件</button>
+            <button id="removeFileBtn" class="btn btn-danger">删除最后一个</button>
+
+            <div class="output-section">
+                <label for="outputFilename">输出文件名:</label>
+                <input type="text" id="outputFilename" placeholder="merged.pdf">
+            </div>
+
+            <button id="mergeBtn" class="btn btn-primary">合并PDF</button>
+            
+            <div id="progressContainer" class="hidden">
+                <div class="progress-bar">
+                    <div id="progressBar" class="progress-fill"></div>
+                </div>
+                <p id="progressText">正在处理...</p>
+            </div>
+
+            <div id="resultSection" class="hidden">
+                <p id="resultMessage"></p>
+                <a id="downloadLink" class="btn btn-success hidden">下载合并后的PDF</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Web版PDF合并工具 &copy; 2026</p>
+        </footer>
+    </div>
+
+    <script src="libs/pdf-lib.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

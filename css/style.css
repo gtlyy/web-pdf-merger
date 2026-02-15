@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 1.1em;
+}
+
+.file-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.file-input-group label {
+    min-width: 80px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2c3e50;
+}
+
+.file-input-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.file-input-wrapper input[type="file"] {
+    display: none;
+}
+
+.file-input-button {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.selected-file {
+    flex-grow: 1;
+    padding: 8px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.page-range {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    min-width: 200px;
+}
+
+.page-range label {
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+.page-range input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-primary {
+    background-color: #2ecc71;
+    font-size: 18px;
+    padding: 12px 30px;
+}
+
+.btn-primary:hover {
+    background-color: #27ae60;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}
+
+.output-section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+}
+
+.output-section label {
+    min-width: 100px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2c3e50;
+}
+
+.output-section input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#addFileBtn {
+    background-color: #9b59b6;
+}
+
+#addFileBtn:hover {
+    background-color: #8e44ad;
+}
+
+#removeFileBtn {
+    background-color: #e74c3c;
+}
+
+#removeFileBtn:hover {
+    background-color: #c0392b;
+}
+
+#mergeBtn {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.progress-container {
+    margin: 20px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #2ecc71;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+#resultSection {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8fff8;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .file-input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .page-range {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    
+    .file-input-wrapper {
+        width: 100%;
+    }
+}
